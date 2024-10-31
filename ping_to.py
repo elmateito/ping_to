@@ -23,6 +23,5 @@ def ping():
     reg.write(body)
     reg.close()
     reg = open('ip_reg.txt', 'r')
-    print(reg.read())
 
 ping()
