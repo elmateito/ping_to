@@ -21,7 +21,7 @@ def mk_txt(ip_host, hostname, availables, assigned, failed):
 def ping():
     timer = time()
     availables, assigned, failed = [], [], []
-    for i in range(0, 17): #iter from 192.168.0.0 to 192.168.0.8
+    for i in range(0, 9): #iter from 192.168.0.0 to 192.168.0.8
         ip = f'192.168.0.{i}'
         try:
             status = system(f'ping -n 2 -w 1 {ip}')
