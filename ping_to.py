@@ -29,6 +29,7 @@ def ping():
             mk_txt(ip_host, hostname, availables, assigned)
         except: 
             print('\nconn failed\n')
-    print("\n--- execution time: %s secs ---\n" % (round((time() - timer), 3)))
+    file = open('ip_reg.txt', 'r')
+    print(f'{file.read()}\n--- execution time: %s secs ---\n' % (round((time() - timer), 3)))
 
 ping()
